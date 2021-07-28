@@ -1,6 +1,6 @@
 from typing import List, Dict
 import simplejson as json
-from flask import Flask, Response, redirect, make_response, request, jsonify
+from flask import Flask, Response, redirect, make_response, request
 from flask import render_template
 from flaskext.mysql import MySQL
 from pymysql.cursors import DictCursor
