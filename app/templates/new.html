@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/escorts/new" method="POST">
+    <div class="row">
+        <div class="col">
+            <label for="fldYear">Year of Car</label>
+            <input id="fldYear" type="text" class="form-control" placeholder="Year of Car" name="fldYear">
+        </div>
+        <div class="col">
+            <label for="fldMileage_thousands">Mileage on Car in Thousands</label>
+            <input id="fldMileage_thousands" type="text" class="form-control" placeholder="Mileage on Car in Thousands"
+                   name="fldMileage_thousands">
+        </div>
+        <div class="col">
+            <label for="fldPrice">Price of Car</label>
+            <input id="fldPrice" type="text" class="form-control" placeholder="Price of Car" name="fldPrice">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+
+</form>
+
+{% endblock %}
+

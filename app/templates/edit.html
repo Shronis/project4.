@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/edit/{{escort.id}}" method="post">
+    <div class="row">
+        <div class="col">
+            <label for="fldYear">Year</label>
+            <input id="fldYear" type="text" class="form-control" placeholder="Year of Car" name="fldYear" value="{{escort.fldYear}}">
+        </div>
+        <div class="col">
+            <label for="fldMileage_thousands">Mileage in Thousands</label>
+            <input id="fldMileage_thousands" type="text" class="form-control" placeholder="Miles on car in thousands"
+                   name="fldMileage_thousands" value="{{escort.fldMileage_thousands}}">
+        </div>
+        <div class="col">
+            <label for="fldPrice">Price of Car</label>
+            <input id="fldPrice" type="text" class="form-control" placeholder="Price of Car" name="fldPrice" value="{{escort.fldPrice}}">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+
+</form>
+{% endblock %}
+
